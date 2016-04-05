@@ -1,0 +1,25 @@
+{
+    "name": "secamedia/jquery-ajax-form",
+    "type": "component",
+    "description": "wraps form submits with a callback and also submits clicked buttons",
+    "keywords": ["jquery", "form", "ajax", "wrapper"],
+    "homepage": "https://github.com/secamedia/jquery-ajax-form",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Thomas Rudolph",
+            "email": "rudolph@secamedia.de"
+        }
+    ],
+    "require": {
+        "robloach/component-installer": "~0.0.12",
+        "components/jquery": "~1.11"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "js/jquery.sm-ajax-form.js"
+            ]
+        }
+    }
+}
