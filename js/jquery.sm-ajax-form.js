@@ -17,7 +17,7 @@
             event.preventDefault();
             var $this = $(this);
             var type = $this.attr('method');
-            var data = $.getFormData($this, buttonEvent);
+            var data = $.smGetFormData($this, buttonEvent);
             type = type && type.length ? type.toLowerCase() : 'get';
             callback(type, data, $this);
         });
