@@ -41,7 +41,7 @@
      * @author Thomas Rudolph <rudolph@secamedia.de>
      * @since 2016.03.15
      * @param {jQuery} $form
-     * @param {Event} buttonEvent
+     * @param {Event} [buttonEvent]
      * @returns {string}
      */
     $.smGetFormData = function ($form, buttonEvent) {
