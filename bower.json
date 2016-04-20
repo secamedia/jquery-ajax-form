@@ -1,0 +1,26 @@
+{
+  "name": "secamedia/sm-ajax-form",
+  "homepage": "https://github.com/secamedia/jquery-ajax-form",
+  "description": "wraps form submits with a callback and also submits clicked buttons",
+  "main": "js/jquery.sm-ajax-form.js",
+  "keywords": [
+    "jquery",
+    "form",
+    "ajax",
+    "wrapper"
+  ],
+  "authors": [
+    "Thomas Rudolph <rudolph@secamedia.de>"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0"
+  }
+}
