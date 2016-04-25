@@ -46,9 +46,18 @@
      */
     $.smGetFormData = function ($form, buttonEvent) {
         var $disabled = $(':input:disabled', $form).removeAttr('disabled');
-        var data = $form.serialize();
-        if (buttonEvent && buttonEvent.currentTarget.name) {
-            data += '&' + encodeURIComponent(buttonEvent.currentTarget.name) + '='
+        var data;
+
+        if ('function' == typeof FormData) {
+            data = new FormData($form.get(0));
+            if (buttonEvent && buttonEvent.currentTarget.name) {
+                data.append(buttonEvent.currentTarget.name, '');
+            }
+        } else {
+            data = $form.serialize();
+            if (buttonEvent && buttonEvent.currentTarget.name) {
+                data += '&' + encodeURIComponent(buttonEvent.currentTarget.name) + '='
+            }
         }
         $disabled.attr('disabled', 'disabled');
 
