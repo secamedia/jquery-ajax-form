@@ -48,7 +48,7 @@
         var $disabled = $(':input:disabled', $form).removeAttr('disabled');
         var data;
 
-        if ('function' == typeof FormData) {
+        if ('function' == typeof FormData && $(':input[type="file"]', $form).length) {
             data = new FormData($form.get(0));
             if (buttonEvent && buttonEvent.currentTarget.name) {
                 data.append(buttonEvent.currentTarget.name, '');
