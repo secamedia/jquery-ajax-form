@@ -1,5 +1,5 @@
 {
-  "name": "secamedia/sm-ajax-form",
+  "name": "sm-ajax-form",
   "homepage": "https://github.com/secamedia/jquery-ajax-form",
   "description": "wraps form submits with a callback and also submits clicked buttons",
   "main": "js/jquery.sm-ajax-form.js",
